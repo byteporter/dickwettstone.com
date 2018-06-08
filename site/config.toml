@@ -1,0 +1,53 @@
+baseurl = "http://richardwettstone.com"
+title = "Richard P. Wettstone, Ed.D. - Licensed Professional Counselor"
+
+theme = "coder"
+
+languagecode = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Richard P. Wettstone Ed.D." # This should be fixed, author is not a descriptive name for this variable
+    description = "Richard Wettstone is a Licensed Professional Counselor based in "
+    keywords = "blog,developer,personal"
+    info = "Licensed Professional Counselor"
+
+    hideCredits = true
+    hideCopyright = true
+
+    # Custom CSS
+	custom_css = []
+
+[[params.social]]
+    name = "Phone: (540) 434-9430"
+    weight = 1
+    url = "tel:+1-540-434-9430"
+[[params.social]]
+    name = "Email: lpcrpw@gmail.com"
+    weight = 2
+    url = "mailto:lpcrpw@gmail.com"
+[[params.social]]
+    name = "Fax: (540) 434-8100"
+    weight = 3
+    url = "fax:+1-540-434-8100"
+
+# [[menu.main]]
+#     name = "Blog"
+#     weight = 1
+#     url  = "/posts/"
+# [[menu.main]]
+#     name = "About"
+#     weight = 2
+#     url = "/about/"
+[[menu.main]]
+    name = "Location"
+    weight = 1
+    url = "/location"
