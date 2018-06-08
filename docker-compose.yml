@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  dickwettstone_com:
+    image: jojomi/hugo
+    environment:
+      HUGO_THEME: coder
+      VIRTUAL_HOST: $DOMAIN
+      VIRTUAL_PORT: 1313
+      HUGO_WATCH: 'true'
+    volumes:
+      - ./site/:/src
+      - ./output/:/output
+    expose:
+      - 1313
+
+networks:
+  net:
+    external:
+      name: infrastructure_net

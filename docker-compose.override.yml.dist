@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  dickwettstone_com:
+    environment:
+      LETSENCRYPT_HOST: $DOMAIN
+      LETSENCRYPT_EMAIL: $WEBMASTER_EMAIL
