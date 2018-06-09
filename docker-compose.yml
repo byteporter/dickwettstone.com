@@ -3,16 +3,20 @@ version: '3.4'
 services:
   dickwettstone_com:
     image: jojomi/hugo
+    networks:
+      - net
     environment:
       HUGO_THEME: coder
+      HUGO_BASEURL: dickwettstone.com
       VIRTUAL_HOST: $DOMAIN
-      VIRTUAL_PORT: 1313
+      VIRTUAL_PORT: 443
       HUGO_WATCH: 'true'
     volumes:
       - ./site/:/src
       - ./output/:/output
     expose:
-      - 1313
+      - 443
+    command: ["/run.sh", "-p", "443"]
 
 networks:
   net:
