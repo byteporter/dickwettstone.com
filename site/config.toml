@@ -1,4 +1,5 @@
-baseurl = "http://richardwettstone.com"
+# baseurl = "http://richardwettstone.com"
+baseurl = ''
 title = "Richard P. Wettstone, Ed.D. - Licensed Professional Counselor"
 
 theme = "coder"
