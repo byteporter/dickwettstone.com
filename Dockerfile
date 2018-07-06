@@ -9,7 +9,7 @@ RUN /run.sh
 
 RUN ls /wettstone_output
 
-FROM library/nginx
+FROM library/nginx:alpine
 LABEL maintainer=james@byteporter.com
 
 COPY --from=build-site /wettstone_output /usr/share/nginx/html
