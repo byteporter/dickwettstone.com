@@ -18,7 +18,7 @@ disqusShortname = "yourdiscussshortname"
 [params]
     author = "Richard P. Wettstone Ed.D." # This should be fixed, author is not a descriptive name for this variable
     description = "Richard Wettstone is a Licensed Professional Counselor based in Harrisonburg, VA. Specialties include relationship issues, all types of addictions, stress and anger management, depression, and PTSD. Richard Wettstone EdD is trained and certified in hypnosis, which is useful for those interested in specific issues like smoking cessation."
-    keywords = "blog,developer,personal"
+    keywords = "lpc,licensed,professional,counselor"
     info = "Licensed Professional Counselor"
 
     hideCredits = true
