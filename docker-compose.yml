@@ -1,10 +1,12 @@
 version: '3.4'
 
 services:
-  host:
-    image: jlind/wettstone-host
+  richardwettstone-host:
+    image: jlind/richardwettstone-host
     build:
       context: ./
+      args:
+        baseurl: http://$DOMAIN
     networks:
       - net
     environment:
@@ -14,6 +16,16 @@ services:
     #   - ./output/:/usr/share/nginx/html:ro
     # ports:
     #   - 80:80
+  
+  # richardwettstone-host:
+  #   image: jlind/richardwettstone-host
+  #   build:
+  #     context: ./
+  #   networks:
+  #     - net
+  #   environment:
+  #     VIRTUAL_HOST: $SECONDARY_DOMAIN
+  #     VIRTUAL_PORT: 80
 
 networks:
   net:

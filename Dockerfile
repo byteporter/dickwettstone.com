@@ -1,11 +1,14 @@
 FROM jojomi/hugo AS build-site
 
+ARG baseurl
+
 ENV HUGO_THEME=coder
-ENV HUGO_BASEURL=''
 ENV HUGO_DESTINATION='/wettstone_output'
+ENV HUGO_BASEURL=$baseurl
 
 COPY ./site /src
-RUN /run.sh
+RUN set +x && \
+    /run.sh
 
 RUN ls /wettstone_output
 

@@ -1,5 +1,5 @@
 # baseurl = "http://richardwettstone.com"
-baseurl = ''
+# baseurl = 'https://richardwettstone.jdev.pw'
 title = "Richard P. Wettstone, Ed.D. - Licensed Professional Counselor"
 
 theme = "coder"
@@ -23,6 +23,8 @@ disqusShortname = "yourdiscussshortname"
 
     hideCredits = true
     hideCopyright = true
+
+    alturl = "https://dickwettstone.com"
 
     # Custom CSS
 	custom_css = []
