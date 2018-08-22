@@ -25,6 +25,7 @@ disqusShortname = "yourdiscussshortname"
     hideCopyright = true
 
     alturl = "https://dickwettstone.com"
+    physical-address = "356 S Main St, Harrisonburg, VA 22801"
 
     # Custom CSS
 	custom_css = []
@@ -41,6 +42,10 @@ disqusShortname = "yourdiscussshortname"
     name = "Fax: (540) 434-8100"
     weight = 3
     url = "fax:+1-540-434-8100"
+[[params.social]]
+    name = "Address: 356 S Main St, Harrisonburg, VA 22801"
+    weight = 4
+    url = "geo:38.445725,-78.869225"
 
 # [[menu.main]]
 #     name = "Blog"
@@ -50,7 +55,7 @@ disqusShortname = "yourdiscussshortname"
 #     name = "About"
 #     weight = 2
 #     url = "/about/"
-[[menu.main]]
-    name = "Location"
-    weight = 1
-    url = "/location"
+# [[menu.main]]
+#     name = "Location"
+#     weight = 1
+#     url = "/location"
