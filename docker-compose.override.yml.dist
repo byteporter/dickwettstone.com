@@ -8,3 +8,8 @@ services:
     environment:
       LETSENCRYPT_HOST: $DOMAIN
       LETSENCRYPT_EMAIL: $WEBMASTER_EMAIL
+  
+  dickwettstone-host:
+    environment:
+      LETSENCRYPT_HOST: $OLD_DOMAIN
+      LETSENCRYPT_EMAIL: $WEBMASTER_EMAIL

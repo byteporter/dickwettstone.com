@@ -16,6 +16,16 @@ services:
     #   - ./output/:/usr/share/nginx/html:ro
     # ports:
     #   - 80:80
+
+  dickwettstone-host:
+    image: nginx:alpine
+    environment:
+      VIRTUAL_HOST: $OLD_DOMAIN
+      VIRTUAL_PORT: 80
+    networks:
+      - net
+    volumes:
+      - ./container_conf.d/dickwettstone-host/00_redirect.conf:/etc/nginx/conf.d/00_redirect.conf:ro
   
   # richardwettstone-host:
   #   image: jlind/richardwettstone-host
