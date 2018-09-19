@@ -9,6 +9,16 @@
       {{ end }}
     </ul>
     {{ end }}
+    <ul>
+      <li><a id=address_link href="https://www.google.com/maps/search/?api=1&query={{ .Site.Params.physical_address }}">Address: {{ .Site.Params.physical_address }}</a></li>
+    </ul>
+    <script type="text/javascript">
+      if ((navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1) ||
+        (navigator.platform.indexOf("iPad") != -1)) {
+          document.getElementById("address_link").href = "maps://maps.google.com/?q={{ .Site.Params.physical_address }}";
+        }
+    </script>
   </div>
 </section>
 

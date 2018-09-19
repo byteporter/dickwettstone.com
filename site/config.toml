@@ -15,6 +15,8 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "yourdiscussshortname"
 
+googleAnalytics = "UA-31054644-3"
+
 [params]
     author = "Richard P. Wettstone Ed.D." # This should be fixed, author is not a descriptive name for this variable
     description = "Richard Wettstone is a Licensed Professional Counselor based in Harrisonburg, VA. Specialties include relationship issues, all types of addictions, stress and anger management, depression, and PTSD. Richard Wettstone EdD is trained and certified in hypnosis, which is useful for those interested in specific issues like smoking cessation."
@@ -24,7 +26,7 @@ disqusShortname = "yourdiscussshortname"
     hideCredits = true
     hideCopyright = true
 
-    physical-address = "356 S Main St, Harrisonburg, VA 22801"
+    physical_address = "356 S Main St, Harrisonburg, VA 22801"
 
     # Custom CSS
 	custom_css = []
@@ -41,10 +43,6 @@ disqusShortname = "yourdiscussshortname"
     name = "Fax: (540) 434-8100"
     weight = 3
     url = "fax:+1-540-434-8100"
-[[params.social]]
-    name = "Address: 356 S Main St, Harrisonburg, VA 22801"
-    weight = 4
-    url = "geo:38.445725,-78.869225"
 
 # [[menu.main]]
 #     name = "Blog"
