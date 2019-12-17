@@ -2,14 +2,7 @@ version: '3.4'
 
 services:
   richardwettstone-host:
-    build:
-      args:
-        baseurl: https://$DOMAIN
     environment:
       LETSENCRYPT_HOST: $DOMAIN
       LETSENCRYPT_EMAIL: $WEBMASTER_EMAIL
   
-  dickwettstone-host:
-    environment:
-      LETSENCRYPT_HOST: $OLD_DOMAIN
-      LETSENCRYPT_EMAIL: $WEBMASTER_EMAIL
