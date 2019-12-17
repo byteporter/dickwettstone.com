@@ -6,7 +6,7 @@ services:
     build:
       context: ./
       args:
-        baseurl: http://$DOMAIN
+        baseurl: https://$DOMAIN
     networks:
       - net
     environment:
